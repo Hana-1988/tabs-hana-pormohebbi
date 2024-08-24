@@ -17,5 +17,9 @@ function App(){
       setActiveTab(tabs[0].id);
     }
   },[]);
+  const handleTabClick = (tabId) => {
+    setActiveTab(tabId);
+    localStorage.setItem('activeTab', tabId);
+  }
 }
 export default App
