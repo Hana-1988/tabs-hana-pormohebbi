@@ -11,6 +11,7 @@ const tabs = [
 function App(){
   const [activeTab, setActiveTab] = useState('');
   useEffect(()=>{
+    const lastTab = localStorage.getItem('activeTab');
     if (lastTab) {
       setActiveTab(lastTab);
     } else {
