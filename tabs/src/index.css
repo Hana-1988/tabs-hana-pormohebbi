@@ -23,3 +23,10 @@ h1{
   font-size: 20px;
   font-weight: bold;
 }
+.tab {
+  flex: 1;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
