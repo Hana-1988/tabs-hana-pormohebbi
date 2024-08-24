@@ -21,5 +21,10 @@ function App(){
     setActiveTab(tabId);
     localStorage.setItem('activeTab', tabId);
   }
+  return(
+    <>
+    <h1>Tabs Component With React</h1>
+    </>
+  );
 }
 export default App
