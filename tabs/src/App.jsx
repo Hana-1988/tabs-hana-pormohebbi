@@ -10,5 +10,8 @@ const tabs = [
 ];
 function App(){
   const [activeTab, setActiveTab] = useState('');
+  useEffect(()=>{
+    
+  },[]);
 }
 export default App
