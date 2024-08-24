@@ -30,7 +30,9 @@ function App(){
           <div  key={tab.id}
           className={`tab ${activeTab === tab.id ? 'active' : ''}`}
           onClick={() => handleTabClick(tab.id)}
-          ></div>
+          >
+            {tab.title}
+          </div>
         ))}
       </div>
     </div>
