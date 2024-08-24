@@ -24,6 +24,7 @@ function App(){
   return(
     <>
     <h1>Tabs Component With React</h1>
+    <div className='container'></div>
     </>
   );
 }
