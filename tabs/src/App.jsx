@@ -11,7 +11,11 @@ const tabs = [
 function App(){
   const [activeTab, setActiveTab] = useState('');
   useEffect(()=>{
-    
+    if (lastTab) {
+      setActiveTab(lastTab);
+    } else {
+      setActiveTab(tabs[0].id);
+    }
   },[]);
 }
 export default App
