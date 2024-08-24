@@ -27,7 +27,10 @@ function App(){
     <div className='container'>
       <div className='tabs'>
         {tabs.map((tab)=>(
-          <div></div>
+          <div  key={tab.id}
+          className={`tab ${activeTab === tab.id ? 'active' : ''}`}
+          onClick={() => handleTabClick(tab.id)}
+          ></div>
         ))}
       </div>
     </div>
