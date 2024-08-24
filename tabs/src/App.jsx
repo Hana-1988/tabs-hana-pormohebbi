@@ -36,7 +36,9 @@ function App(){
           </div>
         ))}
       </div>
-      <div className='content'></div>
+      <div className='content'>
+      {tabs.find((tab) => tab.id === activeTab)?.content}
+      </div>
     </div>
     </>
   );
