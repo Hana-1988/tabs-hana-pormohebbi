@@ -25,7 +25,11 @@ function App(){
     <>
     <h1>Tabs Component With React</h1>
     <div className='container'>
-      <div className='tabs'></div>
+      <div className='tabs'>
+        {tabs.map((tab)=>(
+          <div></div>
+        ))}
+      </div>
     </div>
     </>
   );
